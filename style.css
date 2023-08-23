@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Inconsolata&family=Poppins&display=swap');
+
+:root{
+    --primary-color: #191D88;
+    --secondary-color: #FFC436;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+}
+
+.profile {
+    height: 5%;
+    width: 5%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: var(--primary-color);
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    position: relative;
+    margin: 10px;
+    transition: all ease-in-out 0.3s;
+}
+
+nav ul li a::after{
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: var(--secondary-color);
+    transition: 0.3s ease-in-out;
+}
+
+
+nav ul li a:hover{
+    color: var(--secondary-color);
+}
+
+nav ul li a:hover::after{
+    width: 100%; 
+}
+
