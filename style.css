@@ -11,6 +11,9 @@
     box-sizing: border-box;
     font-family: 'Inconsolata', monospace;
 }
+body{
+    background-color: var(--primary-color);
+}
 
 .profile {
     height: 5%;
@@ -59,4 +62,50 @@ nav ul li a:hover{
 nav ul li a:hover::after{
     width: 100%; 
 }
+
+/* MAINSECTION */
+.info{
+    width: 100%;
+    display: flex;
+}
+
+.details{
+    width: 50%;
+}
+
+.details p{
+    color: #fff;
+    position: relative;
+    top: 35%;
+    left: 35%;
+    font-size: 35px;
+}
+
+.details a{
+    padding: 14px;
+    background-color: var(--secondary-color);
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    top: 40%;
+    left: 35%;
+}
+
+ .details span{
+    color: var(--secondary-color);
+ }
+
+.profile_img{
+    width: 50%;
+    height: auto;
+}
+
+.profile_img img{
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+}
+
+/* MAINSECTION */
 
